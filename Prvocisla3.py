@@ -8,13 +8,19 @@ def je_prvocislo(cislo):
             return False
     return True
 
+
 def najdi_prvocisla(od, do):
     prvocisla = []
-    for cislo in range(od, do + 1):
-        if je_prvocislo(cislo):
-            prvocisla.append(cislo)
-            # print(cislo)
-    return prvocisla
+    while od & do != int:
+        od = int(input("CHYBA - Zadejte počáteční číslo: "))
+        do = int(input("CHYBA - Zadejte číslo do: "))
+    if od & do == int:
+        for cislo in range(od, do + 1):
+            if je_prvocislo(cislo):
+                prvocisla.append(cislo)
+                # print(cislo)
+        return prvocisla
+
 
 # Příklad použití
 od = int(input("Zadejte počáteční číslo: "))
