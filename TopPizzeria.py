@@ -1,4 +1,5 @@
 import math
+from Prvocisla_Martin_Sagat import *
 
 polomer_pizze_mala = 10
 polomer_pizze_stredna = 16
@@ -26,4 +27,8 @@ print(round(pomer_velkosti_k_cene(polomer_pizze_mala,cena_pizza_mala)))
 print(round(pomer_velkosti_k_cene(polomer_pizze_stredna,cena_pizza_stredna)))
 print(round(pomer_velkosti_k_cene(polomer_pizze_velka,cena_pizza_velka)))
 print("\n")
+
+# print(je_prvocislo(100))
+print(najdi_prvocisla(100,1000))
+dir()
 
